@@ -1,0 +1,194 @@
+$mainGreen: #008459;
+$hoverSelectGreen: #004A2F;
+$mobileGreen: #007953;
+
+// fonts
+$subNavLinks: 0.875rem;
+$navLinks: 1.375rem;
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, Arial, sans-serif !important;
+}
+
+
+body, html {
+  height: 100vh;
+  background-color: black;
+}
+
+#navContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  
+  #subNavBarComponent {
+    display: flex;
+    justify-content: end;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    
+    ul {
+      list-style-type: none;
+      display: flex;
+      gap: 2rem;
+      
+      li > a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+  
+  #navBarComponent {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding-bottom: 1.5rem;
+    
+    
+    #homeAnchorTag{
+      text-decoration: none;
+      color: white;
+  
+      #homeAnchorTagInfo {
+        padding-left: 0.5rem;
+        border-left: 1px solid white;
+      }
+    }
+    
+    #headerNavLinks {
+      ul {
+        display: flex;
+        gap: 3rem;
+        list-style-type: none;      
+  
+        li {
+          font-size: $navLinks;
+          display: flex;
+          align-items: center;
+          letter-spacing: 2px;
+        }
+  
+        #findServiceBtn {
+          background-color: white;
+          line-height: 0 20px;
+          padding: 0 20px;
+          transition: 0.15s ease-in-out;
+          color: $hoverSelectGreen;
+          text-align: center;
+          width: 11.6875rem !important;
+          height: 45px !important;
+          border-radius: 5px;
+          font-size: 1rem;
+          border: none;
+          cursor: pointer;
+          transition: 150ms; 
+          font-weight: bolder;
+  
+          &:hover {
+            scale: .99;
+            background-color: rgba(216, 255, 243, 0.7);
+          }
+        }
+        
+        #mobileNavBtn {
+          display: none;
+        }
+      }
+    }
+  }
+
+  #mobileNavContainer {
+    display: none;
+    flex-direction: column;
+    color: white;
+  }
+}
+
+
+
+@media (max-width: 1200px) {
+  // Turning Main Nav links invisible and making the hamburger menu
+
+  #navContainer > #navBarComponent > #headerNavLinks {
+    ul {
+      .headerLink {
+        display: none;
+      }
+
+      #mobileNavBtn {
+        display: block;
+        background: none;
+        color: white;
+        border: none;
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #navContainer {
+    width: 100%;
+    background-color: $mobileGreen;
+    
+    #mobileNavContainer {
+      display: flex;
+
+      .mobileNavLayer:nth-of-type(1) {
+        height: 55px;
+        overflow: hidden;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+        padding: 1rem;
+
+        #mobileNavBtn {
+          display: block;
+          background: none;
+          color: white;
+          border: none;
+          font-size: 2.5rem;
+          cursor: pointer;
+        }
+      }
+
+      .mobileNavLayer:nth-of-type(2) {
+        padding: 10px;
+        background-color: #D6E9DA;
+        max-width: 100%;
+
+        #mobileNavSearchBar {
+          width: 100%;
+          padding: 0 36px 0 7px;
+          line-height: 28px !important;
+          border: none;
+        }
+      }
+
+      .mobileNavLayer:nth-of-type(3) {
+        padding: 7px 0; 
+        text-align: center;
+        font-size: 0.875rem !important;
+        max-width: 100%;
+        line-height: 1.75rem !important;
+         * {
+          cursor: pointer;
+         }
+      }
+    }
+  }
+  
+  #navContainer > #subNavBarComponent, #navContainer > #navBarComponent {
+    display: none;
+  }
+
+}

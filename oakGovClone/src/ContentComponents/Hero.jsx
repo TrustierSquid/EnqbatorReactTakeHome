@@ -2,8 +2,8 @@
 
 export default function Hero (){
   return (
-    <div>
+    <main>
       
-    </div>
+    </main>
   )
 }

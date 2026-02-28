@@ -1,8 +1,10 @@
 import './styles/navbar.scss'
 import './styles/index.scss'
+import './styles/hero.scss'
 import Greeting from './coreComponents/Greeting'
 import NavBar from './ContentComponents/NavBar'
 import Hero from './ContentComponents/Hero'
+import SideLinks from './ContentComponents/SideLinks'
 
 function App() {
 
@@ -10,9 +12,8 @@ function App() {
     <>
       <Greeting>
         <NavBar></NavBar>
-        <Hero>
-
-        </Hero>
+        <SideLinks></SideLinks>
+        <Hero></Hero>
       </Greeting>
     </>
   )

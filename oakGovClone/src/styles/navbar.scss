@@ -8,16 +8,16 @@ $navLinks: 1.375rem;
 
 
 
-body, html {
-  height: 100vh;
-  background-color: black;
-}
-
 #navContainer {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: 0 auto;
+  position: absolute;
+  z-index: 5;
+
+  // Only on absolute elements
+  left: 50%;
+  transform: translateX(-50%);
   
   #subNavBarComponent {
     display: flex;
@@ -105,6 +105,44 @@ body, html {
   }
 }
 
+// Floating Side links
+#sideLinks {
+  position: absolute;
+  z-index: 10;
+  right: 0;
+  top: 115px;
+
+  
+  ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 5px;
+    
+
+    li {
+      display: flex;
+      width: 6.875rem;
+      height: 3.125rem;
+      align-items: center;
+      color: $hoverSelectGreen;
+      background-color: white;
+      padding-left: 0.6875rem;
+      border-radius: 11px 0px 0px 11px;
+      cursor: pointer;
+      transition: 150ms;
+      border-bottom: 2px solid $hoverSelectGreen;
+      font-weight: bold;
+      font-size: 0.8rem;
+      line-height: 1.5;
+      
+      &:hover {
+        background-color: $hoverSelectGreen;
+        color: white;
+      }
+    }
+  }
+}
 
 
 @media (max-width: 1200px) {

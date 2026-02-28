@@ -2,11 +2,14 @@ import './styles/navbar.scss'
 import './styles/index.scss'
 import './styles/hero.scss'
 import './styles/contentSection.scss'
+
 import Greeting from './coreComponents/Greeting'
 import NavBar from './ContentComponents/NavBar'
 import Hero from './ContentComponents/Hero'
 import SideLinks from './ContentComponents/SideLinks'
 import KeyStaff from './ContentComponents/KeyStaff'
+import Options from './ContentComponents/Options'
+
 
 function App() {
 
@@ -19,7 +22,7 @@ function App() {
 
         {/* Content Components */}
         <KeyStaff></KeyStaff>
-        
+        <Options></Options>
         
         
       </Greeting>

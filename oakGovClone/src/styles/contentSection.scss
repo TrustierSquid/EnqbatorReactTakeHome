@@ -68,9 +68,78 @@
 }
 
 
+#options {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 5rem;
+
+  .featureFlexContainer {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;    
+    
+    span {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      background-color: white;
+      outline: 5px solid #008459;
+      border-radius: 50%;
+      height: 150px;
+      width: 150px;
+    } 
+  }
+}
+
+// For Optons and Key Staff Sections
+@media (min-width: 1200px) {
+  #options {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+
+    .featureFlexContainer {
+      flex-direction: row;
+
+      span {
+        height: 300px;
+        width: 300px;
+        font-size: 1.5rem;
+      }
+      
+    }
+  }
+}
+
+@media (min-width: 1300px) {
+  #options {
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+
+    .featureFlexContainer {
+      flex-direction: row;
+      gap: 1.5rem;
+
+      span {
+        height: 200px;
+        width: 200px;
+        font-size: 1.5rem;
+      }
+      
+    }
+  }
+}
+
+
+
 @media (max-width: 1200px) {
   #keyStaffContainer {
     padding: 0.5rem;
+    background-color: white;
   }
   
   #keyStaffContainer > #keyStaffFlexContainer{

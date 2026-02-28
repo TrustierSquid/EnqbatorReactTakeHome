@@ -107,7 +107,7 @@ $navLinks: 1.375rem;
 
 // Floating Side links
 #sideLinks {
-  position: absolute;
+  position: fixed;
   z-index: 10;
   right: 0;
   top: 115px;
@@ -145,6 +145,13 @@ $navLinks: 1.375rem;
 }
 
 
+@media (max-width: 1000px) {
+  #sideLinks {
+    display: none;
+  }
+}
+
+
 @media (max-width: 1200px) {
   // Turning Main Nav links invisible and making the hamburger menu
 
@@ -167,8 +174,11 @@ $navLinks: 1.375rem;
 
 @media (max-width: 768px) {
   #navContainer {
-    width: 100%;
     background-color: $mobileGreen;
+    left: 0px;
+    transform: translateX(0%);
+    position: static;
+    width: 100%;
     
     #mobileNavContainer {
       display: flex;

@@ -1,0 +1,90 @@
+
+
+// Section 1
+#keyStaffContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #DBEEDF;
+
+  #keyStaffFlexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 80%;
+    
+    #davidCoulterImg {
+      max-width: 80%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center;
+      align-self: center;
+    }
+  
+    #keyStaffTextContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      gap: 1rem;
+      margin-top: 1.5rem;
+      max-width: 100%;
+  
+      span {
+        font-size: 1.125rem;
+        line-height: 1.25rem;
+        letter-spacing: 1px;
+        color: #0C5239;
+        font-weight: bold;
+      }
+  
+      p {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        letter-spacing: 0.5px;
+        color: #00492B;
+      }
+  
+      #keyStaffButtonContainer {
+        button {
+          background-color: #008459; 
+          color: white;
+          border: none;
+          line-height: 3.125rem;
+          font-weight: bold;
+          font-size: 1rem;
+          border-radius: 0.5rem;
+          padding: 0 3rem 0rem 3rem;
+          &:hover {
+            background-color: #00492B;
+          }
+        }
+      }
+    }  
+  }
+
+}
+
+
+@media (max-width: 1200px) {
+  #keyStaffContainer {
+    padding: 0.5rem;
+  }
+  
+  #keyStaffContainer > #keyStaffFlexContainer{
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+
+    #keyStaffTextContainer {
+      align-items: center;
+      justify-content: center;
+
+      #keyStaffButtonContainer {
+        align-self: center;
+      }
+    }
+  }
+}

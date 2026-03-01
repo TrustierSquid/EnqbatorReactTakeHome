@@ -12,7 +12,7 @@ import Options from './ContentComponents/Options'
 import News from './ContentComponents/News'
 import CalendarOfEvents from './ContentComponents/CalendarOfEvents'
 import CountyLeaders from './ContentComponents/CountyLeaders'
-
+import BlogsVideos from './ContentComponents/BlogsVideos'
 
 function App() {
 
@@ -29,6 +29,11 @@ function App() {
         <News></News>
         <CalendarOfEvents></CalendarOfEvents>
         <CountyLeaders></CountyLeaders>
+        <BlogsVideos></BlogsVideos>
+        
+        
+        
+        
         
       </Greeting>
     </>

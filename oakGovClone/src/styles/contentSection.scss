@@ -498,3 +498,92 @@ SECTION 5, COUNTY LEADERS SECTION
     }
   }
 }
+
+
+
+/* 
+----------------------------------
+SECTION 6, BLOGS & VIDEOS SECTION 
+----------------------------------
+*/
+
+
+#blogsVideosContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 7rem 2rem;
+  background-color: #004B33;
+
+  h4 {
+    font-size: 1.125rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: white;
+  }
+
+  h1 {
+    font-size: clamp(1.625rem, 1.275rem + 1.55vw, 3.125rem);
+    color: white;
+  }
+
+
+  #blogVideosFlexContainer {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    width: 80%;
+    margin-top: 3rem;
+
+    .blogVideoItem {
+      
+      .blogVideoOverlayContainer {
+        position: relative;
+        width: 450px;
+        
+
+        img {
+          height: 400px;
+          max-width: 100%;
+          object-fit: cover;
+          z-index: 15;
+        }
+        
+        .blogInformation {
+          top: 57%;
+          left: 5%;
+          position: absolute;
+          z-index: 20;
+          max-width: 100%;
+
+          .blogType {
+            background-color: black;
+            font-weight: bold;
+            display: inline;
+            padding: 1rem;
+          }
+
+          .blogDesc {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            padding: 1.5rem;
+            max-width: 100%;
+            background-color: white;
+            line-height: 1.5;;
+            height: 200px;
+
+            .blogTitle {color: black; font-weight: bold;}
+            .blogTag {
+              font-size: 0.9rem;
+            }
+          }
+        }
+      }
+      
+    }
+  } 
+}

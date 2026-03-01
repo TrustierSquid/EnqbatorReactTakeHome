@@ -11,6 +11,8 @@ import KeyStaff from './ContentComponents/KeyStaff'
 import Options from './ContentComponents/Options'
 import News from './ContentComponents/News'
 import CalendarOfEvents from './ContentComponents/CalendarOfEvents'
+import CountyLeaders from './ContentComponents/CountyLeaders'
+
 
 function App() {
 
@@ -26,6 +28,7 @@ function App() {
         <Options></Options>
         <News></News>
         <CalendarOfEvents></CalendarOfEvents>
+        <CountyLeaders></CountyLeaders>
         
       </Greeting>
     </>

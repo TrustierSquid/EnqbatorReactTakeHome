@@ -528,6 +528,7 @@ SECTION 6, BLOGS & VIDEOS SECTION
           max-width: 100%;
           object-fit: cover;
           z-index: 15;
+          border-radius: 1rem;
         }
 
         .blogInformation {
@@ -551,6 +552,7 @@ SECTION 6, BLOGS & VIDEOS SECTION
             padding: 1.5rem;
             max-width: 100%;
             background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
             line-height: 1.5;
 
             .blogTitle {
@@ -574,16 +576,19 @@ SECTION 6, BLOGS & VIDEOS SECTION
         .blogCard {
           width: 400px;
           display: flex;
+          box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 
           img {
-            max-width: 25%;
+            max-width: 30%;
             object-fit: cover;
+            border-radius: 1rem 0rem 0rem 1rem;
           }
 
           .cardDesc {
             display: block;
             background-color: white;
             padding: 1rem;
+            border-radius: 0rem 1rem 1rem 0;
           }
         }
       }

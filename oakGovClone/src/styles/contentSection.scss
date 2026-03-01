@@ -90,6 +90,13 @@
       border-radius: 50%;
       height: 150px;
       width: 150px;
+      cursor: pointer;
+      transition: 150ms;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+      &:hover {
+        scale: 1.05;
+      }
     } 
   }
 }
@@ -127,7 +134,7 @@
       span {
         height: 200px;
         width: 200px;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
       }
       
     }

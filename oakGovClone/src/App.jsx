@@ -9,7 +9,7 @@ import Hero from './ContentComponents/Hero'
 import SideLinks from './ContentComponents/SideLinks'
 import KeyStaff from './ContentComponents/KeyStaff'
 import Options from './ContentComponents/Options'
-
+import News from './ContentComponents/News'
 
 function App() {
 
@@ -23,7 +23,7 @@ function App() {
         {/* Content Components */}
         <KeyStaff></KeyStaff>
         <Options></Options>
-        
+        <News></News>
         
       </Greeting>
     </>

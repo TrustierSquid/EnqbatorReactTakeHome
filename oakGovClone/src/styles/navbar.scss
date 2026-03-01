@@ -6,7 +6,82 @@ $mobileGreen: #007953;
 $subNavLinks: 0.875rem;
 $navLinks: 1.375rem;
 
+.notVisible {
+  display: none;
+}
 
+.trackingNavbarFunctionality {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: $mainGreen;
+  z-index: 100;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+
+
+  // element for the header in the tracking navbar
+  h2 {
+    animation: linkEntrance 0.5s ease-in-out;
+  }
+  
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    #trackingFindServiceBtn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+      line-height: 0 20px;
+      padding: 0 20px;
+      transition: 0.15s ease-in-out;
+      color: $hoverSelectGreen;
+      text-align: center;
+      width: 11.6875rem !important;
+      height: 45px !important;
+      border-radius: 5px;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      transition: 150ms; 
+      font-weight: bolder;
+      animation: linkEntrance 0.5s ease-in-out;
+    }
+
+    li {
+      color: white;
+      font-size: $navLinks;
+      letter-spacing: 2px;
+      animation: linkEntrance 0.5s ease-in-out;
+    }
+
+    @keyframes linkEntrance {
+      from {
+        opacity: 0;
+        transform: translateY(-15px);
+      } to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    li > a {
+      text-decoration: none;
+    }
+
+  }
+}
 
 #navContainer {
   display: flex;
@@ -18,6 +93,8 @@ $navLinks: 1.375rem;
   // Only on absolute elements
   left: 50%;
   transform: translateX(-50%);
+
+  
   
   #subNavBarComponent {
     display: flex;
@@ -49,6 +126,11 @@ $navLinks: 1.375rem;
     #homeAnchorTag{
       text-decoration: none;
       color: white;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-weight: bolder;
+
   
       #homeAnchorTagInfo {
         padding-left: 0.5rem;
@@ -123,7 +205,7 @@ $navLinks: 1.375rem;
     li {
       display: flex;
       width: 6.875rem;
-      height: 3.125rem;
+      height: 3.725rem;
       align-items: center;
       color: $hoverSelectGreen;
       background-color: white;
@@ -133,7 +215,7 @@ $navLinks: 1.375rem;
       transition: 150ms;
       border-bottom: 2px solid $hoverSelectGreen;
       font-weight: bold;
-      font-size: 0.8rem;
+      font-size: 1.1rem;
       line-height: 1.5;
       
       &:hover {
@@ -173,6 +255,10 @@ $navLinks: 1.375rem;
 }
 
 @media (max-width: 768px) {
+  #trackingNavbar {
+    display: none;
+  }
+  
   #navContainer {
     background-color: $mobileGreen;
     left: 0px;

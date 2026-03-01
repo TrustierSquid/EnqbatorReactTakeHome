@@ -6,30 +6,30 @@ export default function Options() {
       <div className="featureFlexContainer">
         <span>
           <h1>🌲</h1>
-          <h5>State of the Country</h5>
+          <p>State of the Country</p>
         </span>
         <span>
           <h1>🏢</h1>
-          <h5>Pontiac Redevelopment</h5>
+          <p>Pontiac Redevelopment</p>
         </span>
         <span>
           <h1>🐶</h1>
-          <h5>Pet Adoption</h5>
+          <p>Pet Adoption</p>
         </span>
       </div>
 
       <div className="featureFlexContainer">
         <span>
           <h1>🍛</h1>
-          <h5>Food Help</h5>
+          <p>Food Help</p>
         </span>
         <span>
           <h1>🌊</h1>
-          <h5>Parks</h5>
+          <p>Parks</p>
         </span>
         <span>
           <h1>📃</h1>
-          <h5>Vital Records</h5>
+          <p>Vital Records</p>
         </span>
       </div>
     </section>

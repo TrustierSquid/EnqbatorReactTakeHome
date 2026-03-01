@@ -1,6 +1,24 @@
 
+.subtitle {
+  font-size: 1.125rem;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: #00492B;
+}
 
-// Section 1
+
+.title {
+  font-size: clamp(1.625rem, 1.275rem + 1.55vw, 3.125rem);
+}
+
+
+
+/* 
+----------------------------------
+SECTION 1, SHOWING DAVID COULTER AND KEY STAFF
+----------------------------------
+*/
+
 #keyStaffContainer {
   display: flex;
   flex-direction: column;
@@ -66,6 +84,13 @@
   }
 
 }
+
+
+/* 
+----------------------------------
+SECTION 2, FLEX OPTIONS
+----------------------------------
+*/
 
 
 #options {
@@ -160,6 +185,112 @@
 
       #keyStaffButtonContainer {
         align-self: center;
+      }
+    }
+  }
+}
+
+
+
+/* 
+----------------------------------
+SECTION 3, NEWS SECTION
+----------------------------------
+*/
+
+
+#newsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #DBEEDF;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 7rem;
+
+  #newsFlexContainer {
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4rem;
+    
+    .newsItem {
+      display: flex;
+      flex-direction: column;
+      width: clamp(280px, 100%, 300px);
+      transition: 150ms;
+      
+      &:hover {
+        scale: 1.02;
+      }
+
+      .itemDate {
+        background-color: rgba(0, 0, 0, 0.824);
+        color: white;
+        padding: 1rem;
+      }
+
+      .itemDescription {
+        background-color: white;
+        padding: 1rem;
+        flex-grow: 1;
+        border-radius: 0 0 1rem 1rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        line-height: 1.5rem;
+      }
+
+      .newsItemOverlayContainer {
+        position: relative;
+        overflow: hidden;
+        
+        img {
+          max-width: 100%;
+          border-radius: 1rem 1rem 0 0;
+        }
+
+        @keyframes overlayEntrance {
+          from {
+            opacity: 0;
+            transform: translateX(-100px);
+          }
+          to {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+
+        .overlayMessage {
+          position: absolute;
+          top: 2rem;
+          left: 0rem;
+          background-color: rgb(79, 105, 255);
+          color: white;
+          padding: 0.5rem;
+          box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+          border-radius: 0rem 0.5rem 0.5rem 0rem;
+          animation: overlayEntrance 0.5s ease-in-out;
+        }
+
+        .applyEntrance {
+          animation: overlayEntrance 0.5s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #newsContainer {
+    padding: 1rem;
+
+    #newsFlexContainer {
+      gap: 1.5rem;
+      max-width: 100%;
+      
+      .newsItem {
+        width: clamp(250px, 90vw, 300px);
       }
     }
   }

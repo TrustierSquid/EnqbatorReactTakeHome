@@ -295,3 +295,101 @@ SECTION 3, NEWS SECTION
     }
   }
 }
+
+
+
+/* 
+----------------------------------
+SECTION 4, CALENDAR OF EVENTS SECTION 
+----------------------------------
+*/
+
+#calendarOfEventsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #007953;
+  padding: 7rem 2rem;
+
+  h4 {
+    font-size: 1.125rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: white;
+  }
+
+  h1 {
+    color: white;
+    font-size: clamp(1.5rem, 1rem + 2vw, 2.5rem);
+  }
+
+  #eventsFlexContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    width: 100%;
+    flex-wrap: wrap;
+
+    .eventItem {
+      display: flex;
+      flex-direction: column;
+      width: clamp(280px, 90vw, 400px);
+  
+      img {
+        max-width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 1.5rem 1.5rem 0 0;
+      }
+  
+      .eventDetails {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        border-radius: 0 0 1.5rem 1.5rem;
+        padding: 0.5rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+        
+        .eventDate {
+          padding: 2rem;
+          background-color: #006240;
+          width: 7rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          border-radius: 1.5rem;
+        }
+  
+        .eventDesc {
+          padding: 1rem;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 1rem;
+          font-size: 1.125rem;
+          font-weight: bold;
+          flex: 1;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #calendarOfEventsContainer {
+    padding: 2rem 1rem;
+
+    #eventsFlexContainer {
+      gap: 1.5rem;
+
+      .eventItem {
+        width: clamp(250px, 95vw, 350px);
+      }
+    }
+  }
+}

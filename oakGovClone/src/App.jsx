@@ -10,6 +10,7 @@ import SideLinks from './ContentComponents/SideLinks'
 import KeyStaff from './ContentComponents/KeyStaff'
 import Options from './ContentComponents/Options'
 import News from './ContentComponents/News'
+import CalendarOfEvents from './ContentComponents/CalendarOfEvents'
 
 function App() {
 
@@ -24,6 +25,7 @@ function App() {
         <KeyStaff></KeyStaff>
         <Options></Options>
         <News></News>
+        <CalendarOfEvents></CalendarOfEvents>
         
       </Greeting>
     </>

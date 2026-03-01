@@ -38,6 +38,10 @@ $navLinks: 1.375rem;
     align-items: center;
     gap: 2rem;
 
+    li {
+      cursor: pointer;
+    }
+
     #trackingFindServiceBtn {
       display: flex;
       align-items: center;
@@ -149,6 +153,7 @@ $navLinks: 1.375rem;
           display: flex;
           align-items: center;
           letter-spacing: 2px;
+          cursor: pointer;
         }
   
         #findServiceBtn {
@@ -241,6 +246,7 @@ $navLinks: 1.375rem;
     ul {
       .headerLink {
         display: none;
+        cursor: pointer;
       }
 
       #mobileNavBtn {

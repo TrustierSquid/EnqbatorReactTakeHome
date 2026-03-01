@@ -15,7 +15,7 @@ export default function NavBar() {
         id="trackingNavbar"
         className={scrollY > 120 ? "trackingNavbarFunctionality" : "notVisible"}
       >
-        <h2>Oakland Michigan County </h2>
+        <h2>Oakland MI County</h2>
         <ul>
           <li className="headerLink">Business</li>
           <li className="headerLink">Community</li>

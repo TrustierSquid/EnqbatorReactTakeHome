@@ -552,7 +552,9 @@ SECTION 6, BLOGS & VIDEOS SECTION
             padding: 1.5rem;
             max-width: 100%;
             background-color: white;
-            box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+            box-shadow:
+              rgba(0, 0, 0, 0.3) 0px 19px 38px,
+              rgba(0, 0, 0, 0.22) 0px 15px 12px;
             line-height: 1.5;
 
             .blogTitle {
@@ -653,12 +655,136 @@ SECTION 6, BLOGS & VIDEOS SECTION
   }
 }
 
-
-
-
-
 /* 
 ----------------------------------------------------------------------------------------------
 SECTION 7, STATS SECTION 
 ----------------------------------------------------------------------------------------------
 */
+
+#stats {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 7rem 2rem;
+  background-color: #007a52;
+  color: white;
+
+  h4 {
+    font-size: 1.125rem;
+    font-weight: normal;
+    letter-spacing: 1px;
+    color: white;
+  }
+
+  h1 {
+    font-size: clamp(1.625rem, 1.275rem + 1.55vw, 3.125rem);
+    color: white;
+  }
+
+  #statContainer {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 4rem;
+
+    .statItem {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      background-color: #00492b;
+      border-radius: 1rem;
+      box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+      .statOverlayContainer {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .statNumber {
+          position: absolute;
+          color: black;
+        }
+      }
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 1rem solid rgb(92, 163, 92);
+      }
+
+      .statCard {
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  #stats {
+    text-align: center;
+
+    #statContainer {
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+
+      .statItem {
+        width: 100%;
+      }
+    }
+  }
+}
+
+/* 
+----------------------------------------------------------------------------------------------
+SECTION 8, SUBSCRIBE SECTION 
+----------------------------------------------------------------------------------------------
+*/
+
+#subscribe {
+  padding: 2rem 1rem;
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.3rem;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+
+    h1 {
+    }
+
+    p {
+      font-size: 1.3rem;
+      width: 40%;
+    }
+
+    button {
+      padding: 0.5rem 2rem;
+      font-size: 1.2rem;
+      background-color: #007953;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+      cursor: pointer;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #subscribe {
+    article {
+      p {
+        width: 90%;
+      }
+    }
+  }
+}

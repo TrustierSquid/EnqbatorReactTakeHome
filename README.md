@@ -14,8 +14,12 @@ cd into oakGovClone/
 ```
 cd oakGovClone
 ```
+Install Dependencies:
+```
+npm i
+```
 
-Run the frontend:
+Then run the frontend:
 ```
 npm run dev
 ```

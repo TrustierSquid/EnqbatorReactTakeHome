@@ -12,12 +12,12 @@ Some of the design choices, I went ahead and revamped them and made small improv
 Pull the clone the repo
 cd into oakGovClone/
 ```
-$ cd oakGovClone
+cd oakGovClone
 ```
 
 Run the frontend:
 ```
-$ npm run dev
+npm run dev
 ```
 
 ## Enjoy Frontend!

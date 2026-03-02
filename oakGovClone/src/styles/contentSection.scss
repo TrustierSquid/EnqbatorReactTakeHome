@@ -697,6 +697,11 @@ SECTION 7, STATS SECTION
       background-color: #00492b;
       border-radius: 1rem;
       box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+      transition: 150ms;
+
+      &:hover {
+        transform: translateY(-10px);
+      }
 
       .statOverlayContainer {
         position: relative;
@@ -719,6 +724,14 @@ SECTION 7, STATS SECTION
 
       .statCard {
         margin-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        
+
+        p {
+          line-height: 1.5;
+        }
       }
     }
   }

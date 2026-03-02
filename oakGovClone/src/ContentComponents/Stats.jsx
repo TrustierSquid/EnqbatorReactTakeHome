@@ -14,6 +14,7 @@ export default function Stats() {
 
             <div className="statCard">
               <h3>Healthy Residents</h3>
+              
               <p>
                 Nearly 7,300 residents received these new Health360 services in
                 2022 at our clinics in Pontiac and Southfield.

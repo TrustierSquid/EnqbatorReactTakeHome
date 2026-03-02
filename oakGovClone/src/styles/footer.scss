@@ -74,6 +74,12 @@
       width: auto;
     }
 
+    .contactInfo {
+      .contactLink {
+        text-decoration: underline;
+      }
+    }
+
     .contactInfo:nth-of-type(3) {
       display: flex;
       flex-direction: column;
@@ -115,9 +121,7 @@
         cursor: pointer;
       }
       
-      .contactLink {
-        text-decoration: underline;
-      }
+      
     }
   }
 }

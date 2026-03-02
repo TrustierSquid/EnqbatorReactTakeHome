@@ -11,6 +11,7 @@ export default function NavBar() {
 
   return (
     <>
+    {/* This navbar appears when the user scrolls past the hero. */}
       <div
         id="trackingNavbar"
         className={scrollY > 120 ? "trackingNavbarFunctionality" : "notVisible"}
@@ -25,6 +26,7 @@ export default function NavBar() {
       </div>
 
       <nav id="navContainer">
+        {/* Very Top Navbar */}
         <div id="subNavBarComponent">
           <ul>
             <li>

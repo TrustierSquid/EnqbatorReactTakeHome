@@ -1,5 +1,3 @@
-
-
 export default function Options() {
   return (
     <section id="options">
@@ -33,5 +31,5 @@ export default function Options() {
         </span>
       </div>
     </section>
-  )
+  );
 }

@@ -1,6 +1,4 @@
-
-
-export default function CalendarOfEvents(){
+export default function CalendarOfEvents() {
   return (
     <section id="calendarOfEventsContainer">
       <h4>CALENDAR OF EVENTS</h4>
@@ -8,7 +6,6 @@ export default function CalendarOfEvents(){
       <br />
 
       <div id="eventsFlexContainer">
-
         <span className="eventItem">
           <img src="/src/assets/imgs/event1.png" alt="" />
 
@@ -23,7 +20,6 @@ export default function CalendarOfEvents(){
             </span>
           </div>
         </span>
-
 
         <span className="eventItem">
           <img src="/src/assets/imgs/event2.png" alt="" />
@@ -40,7 +36,6 @@ export default function CalendarOfEvents(){
           </div>
         </span>
 
-
         <span className="eventItem">
           <img src="/src/assets/imgs/event3.png" alt="" />
 
@@ -55,9 +50,7 @@ export default function CalendarOfEvents(){
             </span>
           </div>
         </span>
-
-
       </div>
     </section>
-  )
+  );
 }

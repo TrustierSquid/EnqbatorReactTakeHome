@@ -1,6 +1,4 @@
-
-
-export default function SideLinks(){
+export default function SideLinks() {
   return (
     <nav id="sideLinks">
       <ul>
@@ -15,5 +13,5 @@ export default function SideLinks(){
         <li>Connect</li>
       </ul>
     </nav>
-  )
+  );
 }

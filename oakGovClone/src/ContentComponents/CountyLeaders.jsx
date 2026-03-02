@@ -1,5 +1,3 @@
-
-
 export default function CountyLeaders() {
   return (
     <section id="countyLeadersContainer">
@@ -16,7 +14,7 @@ export default function CountyLeaders() {
             <button>ℹ️</button>
           </span>
         </span>
-        
+
         <span className="leaderItem">
           <img src="/src/assets/imgs/leader2.png" alt="" />
           <h3>Lisa Brown</h3>
@@ -86,12 +84,7 @@ export default function CountyLeaders() {
             <button>ℹ️</button>
           </span>
         </span>
-
-
       </div>
-      
-      
-      
     </section>
-  )
+  );
 }

@@ -5,7 +5,6 @@ export default function BlogsVideos() {
       <h1>Blogs & Videos</h1>
 
       <div id="blogVideosFlexContainer">
-        
         <span className="blogVideoItem">
           <div className="blogVideoOverlayContainer">
             <img src="/src/assets/imgs/blog1.png" alt="" />
@@ -27,16 +26,16 @@ export default function BlogsVideos() {
           </div>
         </span>
 
-
         <span className="blogVideoItem">
-
           <div id="blogCardFlexContainer">
             <article className="blogCard">
               <img src="/src/assets/imgs/cardImg1.png" alt="" />
 
               <span className="cardDesc">
                 <h3 className="cardTitle">Oakland County Executive David</h3>
-                <p>Mark your calendars! Oakland County Executive David Coulter</p>
+                <p>
+                  Mark your calendars! Oakland County Executive David Coulter
+                </p>
               </span>
             </article>
 
@@ -44,8 +43,13 @@ export default function BlogsVideos() {
               <img src="/src/assets/imgs/cardImg2.png" alt="" />
 
               <span className="cardDesc">
-                <h3 className="cardTitle">Are Smart-Home Cameras Watching More Than You</h3>
-                <p>Smart-home cameras are one of those upgrades that feel like a no-brainer.</p>
+                <h3 className="cardTitle">
+                  Are Smart-Home Cameras Watching More Than You
+                </h3>
+                <p>
+                  Smart-home cameras are one of those upgrades that feel like a
+                  no-brainer.
+                </p>
               </span>
             </article>
 
@@ -53,11 +57,15 @@ export default function BlogsVideos() {
               <img src="/src/assets/imgs/cardImg3.png" alt="" />
 
               <span className="cardDesc">
-                <h3 className="cardTitle">Support Available for Upcoming Student Debt</h3>
-                <p>The phrase "student loan repayment" is often met with feelings of confusion.</p>
+                <h3 className="cardTitle">
+                  Support Available for Upcoming Student Debt
+                </h3>
+                <p>
+                  The phrase "student loan repayment" is often met with feelings
+                  of confusion.
+                </p>
               </span>
             </article>
-            
           </div>
         </span>
 
@@ -69,17 +77,15 @@ export default function BlogsVideos() {
               <h4 className="blogType">Video</h4>
 
               <span className="blogDesc">
-                <h3 className="blogTitle">
-                  Oakland County: A Tribute 2025
-                </h3>
+                <h3 className="blogTitle">Oakland County: A Tribute 2025</h3>
                 <p className="blogTag">
-                  We are a thriving community driven by our people, innovation and unity.
+                  We are a thriving community driven by our people, innovation
+                  and unity.
                 </p>
               </span>
             </div>
           </div>
         </span>
-
       </div>
     </section>
   );

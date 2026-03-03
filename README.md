@@ -9,7 +9,7 @@ Some of the design choices, I went ahead and revamped them and made small improv
 
 # To View the frontend page:
 
-Pull the clone the repo
+Clone the repository and then
 cd into oakGovClone/
 ```
 cd oakGovClone

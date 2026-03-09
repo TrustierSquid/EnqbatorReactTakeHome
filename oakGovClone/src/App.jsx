@@ -35,9 +35,6 @@ function App() {
         <BlogsVideos></BlogsVideos>
         <Stats></Stats>
         <Footer></Footer>
-        
-        
-        
       </Greeting>
     </>
   )

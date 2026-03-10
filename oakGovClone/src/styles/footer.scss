@@ -1,10 +1,8 @@
-
-
 #socialsContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #D6E9DA;
+  background-color: #d6e9da;
   padding: 7rem 2rem;
 
   #iframeContainer {
@@ -19,7 +17,7 @@
       display: flex;
       width: 100%;
       transition: transform 150ms ease;
-      
+
       .iframeItem {
         display: flex;
         flex-direction: column;
@@ -41,7 +39,7 @@
         button {
           padding: 1rem;
           font-size: 1rem;
-          background-color: #007A52;
+          background-color: #007a52;
           color: white;
           border-radius: 0.5rem;
           border: none;
@@ -63,9 +61,7 @@
           }
         }
       }
-      
     }
-
   }
 
   #iframeButtonContainer {
@@ -74,12 +70,12 @@
     gap: 1.5rem;
 
     button {
-      height: 60px;  
+      height: 60px;
       width: 60px;
       font-size: 1.5rem;
       background: none;
       border: none;
-      background-color: #007A52;
+      background-color: #007a52;
       color: white;
       border-radius: 1rem;
       cursor: pointer;
@@ -91,13 +87,12 @@
   }
 }
 
-
 #footerContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  background-color: #007A52;
+  background-color: #007a52;
   color: white;
   padding: 4rem 2rem;
   gap: 2rem;
@@ -133,7 +128,7 @@
       @media (min-width: 768px) {
         width: auto;
       }
-      
+
       input {
         width: 100%;
         height: 30px;
@@ -157,15 +152,13 @@
       }
 
       .clickForMore {
-        background-color: #D6E9DA;
+        background-color: #d6e9da;
         border: none;
         padding: 1rem;
         border-radius: 0.5rem;
         font-size: 1rem;
         cursor: pointer;
       }
-      
-      
     }
   }
 }

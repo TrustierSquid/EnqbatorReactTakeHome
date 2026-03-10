@@ -1,5 +1,5 @@
 $mainGreen: #008459;
-$hoverSelectGreen: #004A2F;
+$hoverSelectGreen: #004a2f;
 $mobileGreen: #007953;
 
 // fonts
@@ -29,12 +29,10 @@ $navLinks: 1.375rem;
   justify-content: space-around;
   color: white;
 
-
   // element for the header in the tracking navbar
   h2 {
     animation: linkEntrance 0.5s ease-in-out;
   }
-  
 
   ul {
     list-style-type: none;
@@ -79,7 +77,7 @@ $navLinks: 1.375rem;
       font-size: 1rem;
       border: none;
       cursor: pointer;
-      transition: 150ms; 
+      transition: 150ms;
       font-weight: bolder;
       animation: linkEntrance 0.5s ease-in-out;
     }
@@ -95,16 +93,16 @@ $navLinks: 1.375rem;
       from {
         opacity: 0;
         transform: translateY(-15px);
-      } to {
+      }
+      to {
         opacity: 1;
         transform: translateY(0);
       }
     }
-    
+
     li > a {
       text-decoration: none;
     }
-
   }
 }
 
@@ -126,20 +124,17 @@ $navLinks: 1.375rem;
   left: 50%;
   transform: translateX(-50%);
 
-  
-  
   #subNavBarComponent {
     display: flex;
     justify-content: end;
     margin-top: 1rem;
     margin-bottom: 2rem;
-    
+
     ul {
       list-style-type: none;
       display: flex;
       gap: 2rem;
 
-      
       li > a {
         text-decoration: none;
         color: white;
@@ -150,7 +145,7 @@ $navLinks: 1.375rem;
       }
     }
   }
-  
+
   #navBarComponent {
     color: white;
     display: flex;
@@ -158,9 +153,8 @@ $navLinks: 1.375rem;
     justify-content: space-between;
     border-bottom: 1px solid white;
     padding-bottom: 1.5rem;
-    
-    
-    #homeAnchorTag{
+
+    #homeAnchorTag {
       text-decoration: none;
       color: white;
       display: flex;
@@ -168,19 +162,18 @@ $navLinks: 1.375rem;
       gap: 1rem;
       font-weight: bolder;
 
-  
       #homeAnchorTagInfo {
         padding-left: 0.5rem;
         border-left: 1px solid white;
       }
     }
-    
+
     #headerNavLinks {
       ul {
         display: flex;
         gap: 3rem;
-        list-style-type: none;      
-  
+        list-style-type: none;
+
         .headerLink {
           font-size: $navLinks;
           display: flex;
@@ -196,7 +189,7 @@ $navLinks: 1.375rem;
             color: rgb(0, 255, 229);
           }
         }
-  
+
         #findServiceBtn {
           background-color: white;
           line-height: 0 20px;
@@ -210,15 +203,15 @@ $navLinks: 1.375rem;
           font-size: 1rem;
           border: none;
           cursor: pointer;
-          transition: 150ms; 
+          transition: 150ms;
           font-weight: bolder;
-  
+
           &:hover {
-            scale: .99;
+            scale: 0.99;
             background-color: rgba(216, 255, 243, 0.7);
           }
         }
-        
+
         #mobileNavBtn {
           display: none;
         }
@@ -235,7 +228,7 @@ $navLinks: 1.375rem;
   // DROPDOWN
   .dropdown {
     display: flex;
-    background-color: #013D27;
+    background-color: #013d27;
     justify-content: center;
     position: absolute;
     top: 9rem;
@@ -250,7 +243,7 @@ $navLinks: 1.375rem;
       flex-direction: column;
       gap: 1rem;
 
-      p > a{
+      p > a {
         text-decoration: none;
         color: white;
         &:hover {
@@ -272,13 +265,11 @@ $navLinks: 1.375rem;
   right: 0;
   top: 115px;
 
-  
   ul {
     display: flex;
     flex-direction: column;
     list-style-type: none;
     gap: 5px;
-    
 
     li {
       display: flex;
@@ -298,27 +289,24 @@ $navLinks: 1.375rem;
 
       a {
         text-decoration: none;
-        color: #004A2F;
+        color: #004a2f;
       }
-      
+
       &:hover {
         background-color: $hoverSelectGreen;
         a {
           color: white;
         }
       }
-     
     }
   }
 }
-
 
 @media (max-width: 1000px) {
   #sideLinks {
     display: none;
   }
 }
-
 
 @media (max-width: 1200px) {
   // Turning Main Nav links invisible and making the hamburger menu
@@ -345,14 +333,14 @@ $navLinks: 1.375rem;
   #trackingNavbar {
     display: none;
   }
-  
+
   #navContainer {
     background-color: $mobileGreen;
     left: 0px;
     transform: translateX(0%);
     position: static;
     width: 100%;
-    
+
     #mobileNavContainer {
       display: flex;
 
@@ -377,7 +365,7 @@ $navLinks: 1.375rem;
 
       .mobileNavLayer:nth-of-type(2) {
         padding: 10px;
-        background-color: #D6E9DA;
+        background-color: #d6e9da;
         max-width: 100%;
 
         #mobileNavSearchBar {
@@ -389,20 +377,20 @@ $navLinks: 1.375rem;
       }
 
       .mobileNavLayer:nth-of-type(3) {
-        padding: 7px 0; 
+        padding: 7px 0;
         text-align: center;
         font-size: 0.875rem !important;
         max-width: 100%;
         line-height: 1.75rem !important;
-         * {
+        * {
           cursor: pointer;
-         }
+        }
       }
     }
   }
-  
-  #navContainer > #subNavBarComponent, #navContainer > #navBarComponent {
+
+  #navContainer > #subNavBarComponent,
+  #navContainer > #navBarComponent {
     display: none;
   }
-
 }

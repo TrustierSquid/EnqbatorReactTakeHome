@@ -29,7 +29,6 @@ SECTION 1, SHOWING DAVID COULTER AND KEY STAFF
     width: 100%;
     transition: transform 150ms ease;
 
-
     .keyStaffFlexContainer {
       display: flex;
       align-items: center;
@@ -37,7 +36,7 @@ SECTION 1, SHOWING DAVID COULTER AND KEY STAFF
       gap: 3rem;
       padding: 3rem;
       min-width: 100%;
-  
+
       .keyStaffImg {
         width: clamp(200px, 40vw, 500px);
         height: auto;
@@ -47,9 +46,8 @@ SECTION 1, SHOWING DAVID COULTER AND KEY STAFF
         object-position: center;
         align-self: center;
       }
-  
+
       .keyStaffTextContainer {
-  
         .keyStaffCarouselItemContent {
           display: flex;
           flex-direction: column;
@@ -57,7 +55,7 @@ SECTION 1, SHOWING DAVID COULTER AND KEY STAFF
           gap: 1rem;
           margin-top: 1.5rem;
           max-width: 100%;
-          
+
           span {
             font-size: 1.125rem;
             line-height: 1.25rem;
@@ -65,7 +63,7 @@ SECTION 1, SHOWING DAVID COULTER AND KEY STAFF
             color: #0c5239;
             font-weight: bold;
           }
-    
+
           p {
             font-size: 1.125rem;
             line-height: 1.75rem;
@@ -73,7 +71,7 @@ SECTION 1, SHOWING DAVID COULTER AND KEY STAFF
             color: #00492b;
             width: 80%;
           }
-    
+
           #keyStaffButtonContainer {
             button {
               background-color: #008459;
@@ -90,7 +88,6 @@ SECTION 1, SHOWING DAVID COULTER AND KEY STAFF
             }
           }
         }
-        
       }
     }
   }
@@ -99,7 +96,7 @@ SECTION 1, SHOWING DAVID COULTER AND KEY STAFF
     display: flex;
     gap: 1.5rem;
     margin-bottom: 3rem;
-    
+
     .indexIndicator {
       display: block;
       background-color: rgb(161, 206, 206);
@@ -117,7 +114,7 @@ SECTION 1, SHOWING DAVID COULTER AND KEY STAFF
   #carouselButtonContainer {
     display: flex;
     gap: 1.5rem;
-    
+
     .keyStaffCarouselButtons {
       padding: 1rem;
       font-size: 1.5rem;
@@ -133,9 +130,7 @@ SECTION 1, SHOWING DAVID COULTER AND KEY STAFF
       }
     }
   }
-
 }
-
 
 @media (max-width: 1200px) {
   #keyStaffContainer > #carouselTrack > .keyStaffFlexContainer {
@@ -151,7 +146,11 @@ SECTION 1, SHOWING DAVID COULTER AND KEY STAFF
 }
 
 @media (max-width: 600px) {
-  #keyStaffContainer > #carouselTrack > .keyStaffFlexContainer > .keyStaffTextContainer > .keyStaffCarouselItemContent {
+  #keyStaffContainer
+    > #carouselTrack
+    > .keyStaffFlexContainer
+    > .keyStaffTextContainer
+    > .keyStaffCarouselItemContent {
     h1 {
       font-size: 1.7rem;
     }
@@ -692,7 +691,6 @@ SECTION 6, BLOGS & VIDEOS SECTION
 
     .blogVideoItem > #blogCardFlexContainer {
       max-width: 100%;
-
     }
 
     .blogVideoItem:nth-of-type(1) {
@@ -803,7 +801,6 @@ SECTION 7, STATS SECTION
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-        
 
         p {
           line-height: 1.5;
@@ -847,7 +844,6 @@ SECTION 8, SUBSCRIBE SECTION
     text-align: center;
     margin-top: 1rem;
 
-    
     p {
       font-size: 1.3rem;
       width: 40%;

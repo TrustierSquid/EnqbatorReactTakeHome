@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
+import { Link, useLocation } from 'react-router-dom';
+import NavDropdown from "../componentDependants/NavDropdown";
 
 export default function NavBar() {
+  const location = useLocation();
+  const isSubPage = location.pathname !== '/';
+
   // Keeping track of the scroll position to determine whether to show the mobile nav or not
   const [scrollY, setScrollY] = useState(0);
   useEffect(() => {
@@ -9,8 +14,12 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const [dropdownTopic, setDropdownTopic] = useState("")
+  const [isOpen, setIsOpen] = useState(false)
+
+  
   return (
-    <>
+    <div id="navWrapper" style={isSubPage ? { backgroundColor: '#007A52'} : {}}>
     {/* This navbar appears when the user scrolls past the hero. */}
       <div
         id="trackingNavbar"
@@ -18,14 +27,20 @@ export default function NavBar() {
       >
         <h2>OMC</h2>
         <ul>
-          <li className="headerLink">Business</li>
-          <li className="headerLink">Community</li>
-          <li className="headerLink">Government</li>
+         <Link className="headerLink" to='/business' >
+            <li>Business</li>
+          </Link>
+          <Link className="headerLink" to='/community' >
+            <li>Community</li>
+          </Link>
+          <Link className="headerLink" to='/government'>
+            <li>Government</li>
+          </Link>
           <button id="trackingFindServiceBtn">Find Service</button>
         </ul>
       </div>
 
-      <nav id="navContainer">
+      <nav id="navContainer" className={isSubPage ? 'subPageNav' : ''}>
         {/* Very Top Navbar */}
         <div id="subNavBarComponent">
           <ul>
@@ -45,7 +60,7 @@ export default function NavBar() {
         </div>
 
         <div id="navBarComponent">
-          <a href="#" id="homeAnchorTag">
+          <a href="/" id="homeAnchorTag">
             <span>Oakland County MI</span>
             <div id="homeAnchorTagInfo">
               <p>David Coulter</p>
@@ -55,9 +70,18 @@ export default function NavBar() {
 
           <header id="headerNavLinks">
             <ul>
-              <li className="headerLink">Business</li>
-              <li className="headerLink">Community</li>
-              <li className="headerLink">Government</li>
+              <Link className="headerLink" to='/business' onMouseOver={()=> setDropdownTopic('business')}>
+                Business
+              </Link>
+              <Link className="headerLink" to='/community'  onMouseOver={()=> setDropdownTopic('community')}>
+                Community
+              </Link>
+              <Link className="headerLink" to='/government' onMouseOver={()=> setDropdownTopic('government')}>
+                Government
+              </Link>
+
+              <NavDropdown topic={dropdownTopic} updateTopicState={setDropdownTopic}/>
+
               <button id="findServiceBtn">Find Service</button>
               <button id="mobileNavBtn">&#9776;</button>
             </ul>
@@ -67,7 +91,7 @@ export default function NavBar() {
         <div id="mobileNavContainer">
           <div className="mobileNavLayer">
             <h4>Oakland County Michigan</h4>
-            <button id="mobileNavBtn">&#9776;</button>
+            <button id="mobileNavBtn"  onClick={()=> setIsOpen(prev => !prev)}>&#9776;</button>
           </div>
           <div className="mobileNavLayer">
             <form>
@@ -78,7 +102,42 @@ export default function NavBar() {
             <p>Find Service</p>
           </div>
         </div>
+
       </nav>
-    </>
+
+      <nav id="mobileNavMenu" className={isOpen ? 'openNav' : 'closedNav'} onClick={() => setIsOpen(false)}>
+        <div id="mobileSubNav">
+          <h5>Contact Us</h5>
+          <h5>|</h5>
+          <h5>Jobs</h5>
+          <h5>|</h5>
+          <h5>News</h5>
+          <h5>|</h5>
+          <h5>🛒</h5>
+        </div>
+        <ul>
+          <li>
+            <Link className="headerLink" to='/' >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link className="headerLink" to='/business'>
+              Business
+            </Link>
+          </li>
+          <li>
+            <Link className="headerLink" to='/community' >
+              Community
+            </Link>
+          </li>
+          <li>
+            <Link className="headerLink" to='/government'>
+              Government
+            </Link>
+          </li>
+        </ul>
+      </nav>
+    </div>
   );
 }

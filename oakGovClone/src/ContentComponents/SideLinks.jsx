@@ -2,15 +2,15 @@ export default function SideLinks() {
   return (
     <nav id="sideLinks">
       <ul>
-        <li>Search</li>
-        <li>Executive Message</li>
-        <li>Quick Links</li>
-        <li>News & Media</li>
-        <li>What's Happening</li>
-        <li>County Leaders</li>
-        <li>Blog & Video</li>
-        <li>Dashboard</li>
-        <li>Connect</li>
+        <li><a href="#shadow">Search</a></li>
+        <li><a href="#keyStaffContainer">Executive Message</a></li>
+        <li> <a href="#options">Quick Links</a></li>
+        <li><a href="#newsContainer">News & Media</a></li>
+        <li><a href="#calendarOfEventsContainer">What's Happening</a></li>
+        <li><a href="#countyLeadersContainer">County Leaders</a></li>
+        <li><a href="#blogsVideosContainer">Blog & Video</a></li>
+        <li><a href="#stats">Dashboard</a></li>
+        <li><a href="#socialsContainer">Connect</a></li>
       </ul>
     </nav>
   );

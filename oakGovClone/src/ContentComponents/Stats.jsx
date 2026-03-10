@@ -8,7 +8,7 @@ export default function Stats() {
         <article id="statContainer">
           <div className="statItem">
             <div className="statOverlayContainer">
-              <img src="/src/assets/imgs/statImg1.png" alt="" />
+              <img src="/src/assets/imgs/statsComponentImgs/statImg1.png" alt="" />
               <h1 className="statNumber">7,923</h1>
             </div>
 
@@ -24,7 +24,7 @@ export default function Stats() {
 
           <div className="statItem">
             <div className="statOverlayContainer">
-              <img src="/src/assets/imgs/statImg2.png" alt="" />
+              <img src="/src/assets/imgs/statsComponentImgs/statImg2.png" alt="" />
               <h1 className="statNumber">39,023</h1>
             </div>
 
@@ -39,7 +39,7 @@ export default function Stats() {
 
           <div className="statItem">
             <div className="statOverlayContainer">
-              <img src="/src/assets/imgs/statImg3.png" alt="" />
+              <img src="/src/assets/imgs/statsComponentImgs/statImg3.png" alt="" />
               <h1 className="statNumber">68.4%</h1>
             </div>
 

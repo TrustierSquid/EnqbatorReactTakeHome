@@ -7,7 +7,7 @@ export default function BlogsVideos() {
       <div id="blogVideosFlexContainer">
         <span className="blogVideoItem">
           <div className="blogVideoOverlayContainer">
-            <img src="/src/assets/imgs/blog1.png" alt="" />
+            <img src="/src/assets/imgs/blogs&videosComponentImgs/blog1.png" alt="" />
 
             <div className="blogInformation">
               <h4 className="blogType">Blog</h4>
@@ -29,7 +29,7 @@ export default function BlogsVideos() {
         <span className="blogVideoItem">
           <div id="blogCardFlexContainer">
             <article className="blogCard">
-              <img src="/src/assets/imgs/cardImg1.png" alt="" />
+              <img src="/src/assets/imgs/blogs&videosComponentImgs/cardImg1.png" alt="" />
 
               <span className="cardDesc">
                 <h3 className="cardTitle">Oakland County Executive David</h3>
@@ -40,7 +40,7 @@ export default function BlogsVideos() {
             </article>
 
             <article className="blogCard">
-              <img src="/src/assets/imgs/cardImg2.png" alt="" />
+              <img src="/src/assets/imgs/blogs&videosComponentImgs/cardImg2.png" alt="" />
 
               <span className="cardDesc">
                 <h3 className="cardTitle">
@@ -54,7 +54,7 @@ export default function BlogsVideos() {
             </article>
 
             <article className="blogCard">
-              <img src="/src/assets/imgs/cardImg3.png" alt="" />
+              <img src="/src/assets/imgs/blogs&videosComponentImgs/cardImg3.png" alt="" />
 
               <span className="cardDesc">
                 <h3 className="cardTitle">
@@ -71,7 +71,7 @@ export default function BlogsVideos() {
 
         <span className="blogVideoItem">
           <div className="blogVideoOverlayContainer">
-            <img src="/src/assets/imgs/blog2.png" alt="" />
+            <img src="/src/assets/imgs/blogs&videosComponentImgs/blog2.png" alt="" />
 
             <div className="blogInformation">
               <h4 className="blogType">Video</h4>

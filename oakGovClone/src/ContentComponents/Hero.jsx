@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <main id="heroComponent">
       <div id="shadow"></div>
-      <img src="/src/assets/imgs/heroImg.png" alt="" />
+      <img src="/src/assets/imgs/heroComponentImgs/heroImg.png" alt="" />
       <div id="searchSection">
         <div id="searchContainer">
           <input type="text" placeholder="Search" />

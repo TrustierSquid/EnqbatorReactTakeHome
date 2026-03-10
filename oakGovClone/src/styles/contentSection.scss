@@ -22,60 +22,138 @@ SECTION 1, SHOWING DAVID COULTER AND KEY STAFF
   justify-content: center;
   padding: 2rem;
   background-color: #dbeedf;
+  overflow: hidden;
 
-  #keyStaffFlexContainer {
+  #carouselTrack {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3rem;
-    max-width: 80%;
+    width: 100%;
+    transition: transform 150ms ease;
 
-    #davidCoulterImg {
-      max-width: 80%;
-      border-radius: 50%;
-      object-fit: cover;
-      object-position: center;
-      align-self: center;
-    }
-
-    #keyStaffTextContainer {
+    .keyStaffFlexContainer {
       display: flex;
-      flex-direction: column;
-      align-items: start;
-      gap: 1rem;
-      margin-top: 1.5rem;
-      max-width: 100%;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      padding: 3rem;
+      min-width: 100%;
 
-      span {
-        font-size: 1.125rem;
-        line-height: 1.25rem;
-        letter-spacing: 1px;
-        color: #0c5239;
-        font-weight: bold;
+      .keyStaffImg {
+        width: clamp(200px, 40vw, 500px);
+        height: auto;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        object-fit: cover;
+        object-position: center;
+        align-self: center;
+        z-index: 1;
       }
 
-      p {
-        font-size: 1.125rem;
-        line-height: 1.75rem;
-        letter-spacing: 0.5px;
-        color: #00492b;
-      }
+      .keyStaffTextContainer {
+        .keyStaffCarouselItemContent {
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          gap: 1rem;
+          margin-top: 1.5rem;
+          max-width: 100%;
 
-      #keyStaffButtonContainer {
-        button {
-          background-color: #008459;
-          color: white;
-          border: none;
-          line-height: 3.125rem;
-          font-weight: bold;
-          font-size: 1rem;
-          border-radius: 0.5rem;
-          padding: 0 3rem 0rem 3rem;
-          &:hover {
-            background-color: #00492b;
+          span {
+            font-size: 1.125rem;
+            line-height: 1.25rem;
+            letter-spacing: 1px;
+            color: #0c5239;
+            font-weight: bold;
+          }
+
+          p {
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+            letter-spacing: 0.5px;
+            color: #00492b;
+            width: 80%;
+          }
+
+          #keyStaffButtonContainer {
+            button {
+              background-color: #008459;
+              color: white;
+              border: none;
+              line-height: 3.125rem;
+              font-weight: bold;
+              font-size: 1rem;
+              border-radius: 0.5rem;
+              padding: 0 3rem 0rem 3rem;
+              &:hover {
+                background-color: #00492b;
+              }
+            }
           }
         }
       }
+    }
+  }
+
+  #indexTracker {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+
+    .indexIndicator {
+      display: block;
+      background-color: rgb(161, 206, 206);
+      border-radius: 50%;
+      height: 15px;
+      width: 15px;
+    }
+
+    // Changes the indicator color if the index of the card is in view
+    .inView {
+      background-color: #008459;
+    }
+  }
+
+  #carouselButtonContainer {
+    display: flex;
+    gap: 1.5rem;
+
+    .keyStaffCarouselButtons {
+      padding: 1rem;
+      font-size: 1.5rem;
+      color: white;
+      background-color: #007a52;
+      border: none;
+      border-radius: 1rem;
+      cursor: pointer;
+      transition: 150ms;
+
+      &:hover {
+        background-color: #004926;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  #keyStaffContainer > #carouselTrack > .keyStaffFlexContainer {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem;
+
+    .keyStaffTextContainer > .keyStaffCarouselItemContent {
+      align-items: center;
+      gap: 1.5rem;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  #keyStaffContainer
+    > #carouselTrack
+    > .keyStaffFlexContainer
+    > .keyStaffTextContainer
+    > .keyStaffCarouselItemContent {
+    h1 {
+      font-size: 1.7rem;
     }
   }
 }
@@ -614,9 +692,6 @@ SECTION 6, BLOGS & VIDEOS SECTION
 
     .blogVideoItem > #blogCardFlexContainer {
       max-width: 100%;
-
-      .blogCard {
-      }
     }
 
     .blogVideoItem:nth-of-type(1) {
@@ -727,7 +802,6 @@ SECTION 7, STATS SECTION
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
-        
 
         p {
           line-height: 1.5;
@@ -770,9 +844,6 @@ SECTION 8, SUBSCRIBE SECTION
     align-items: center;
     text-align: center;
     margin-top: 1rem;
-
-    h1 {
-    }
 
     p {
       font-size: 1.3rem;

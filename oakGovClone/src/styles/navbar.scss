@@ -334,6 +334,8 @@ $navLinks: 1.375rem;
     display: none;
   }
 
+
+
   #navContainer {
     background-color: $mobileGreen;
     left: 0px;
@@ -392,5 +394,11 @@ $navLinks: 1.375rem;
   #navContainer > #subNavBarComponent,
   #navContainer > #navBarComponent {
     display: none;
+  }
+
+  #navContainer.subPageNav {
+    width: 100%;
+    left: 0;
+    transform: none;
   }
 }

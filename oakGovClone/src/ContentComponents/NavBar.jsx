@@ -53,7 +53,7 @@ export default function NavBar() {
         </div>
 
         <div id="navBarComponent">
-          <a href="#" id="homeAnchorTag">
+          <a href="/" id="homeAnchorTag">
             <span>Oakland County MI</span>
             <div id="homeAnchorTagInfo">
               <p>David Coulter</p>

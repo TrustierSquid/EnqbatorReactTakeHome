@@ -1,6 +1,6 @@
 
 
-#footer {
+#socialsContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,35 +13,79 @@
     gap: 2rem;
     margin-top: 2rem;
     width: 100%;
+    overflow: hidden;
 
-    @media (min-width: 1108px) {
-      flex-direction: row;
-    }
-
-    .iframeItem {
+    #iframeCarouselTrack {
       display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      flex: 1;
-
-      button {
-        padding: 1rem;
-        font-size: 1rem;
-        background-color: #007A52;
-        color: white;
-        border-radius: 0.5rem;
-        border: none;
-        font-weight: bold;
-      }
-    }
-    
-    iframe {
-      height: 300px;
       width: 100%;
+      transition: transform 150ms ease;
+      
+      .iframeItem {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        min-width: 100%;
+        box-sizing: border-box;
+        padding: 0 0.5rem;
 
-      @media (min-width: 768px) {
-        height: 500px;
-        width: auto;
+        // When at 768 viewport width only 2 cards will show at a time
+        @media (min-width: 768px) {
+          min-width: calc(100% / 2);
+        }
+
+        // When at 1108 or more viewport width only 3 cards will show at a time
+        @media (min-width: 1108px) {
+          min-width: calc(100% / 3);
+        }
+
+        button {
+          padding: 1rem;
+          font-size: 1rem;
+          background-color: #007A52;
+          color: white;
+          border-radius: 0.5rem;
+          border: none;
+          font-weight: bold;
+          cursor: pointer;
+          &:hover {
+            background-color: #03452f;
+          }
+        }
+
+        iframe {
+          height: 300px;
+          width: 100%;
+          border-radius: 1rem;
+          border: none;
+
+          @media (min-width: 768px) {
+            height: 500px;
+          }
+        }
+      }
+      
+    }
+
+  }
+
+  #iframeButtonContainer {
+    display: flex;
+    margin-top: 2rem;
+    gap: 1.5rem;
+
+    button {
+      height: 60px;  
+      width: 60px;
+      font-size: 1.5rem;
+      background: none;
+      border: none;
+      background-color: #007A52;
+      color: white;
+      border-radius: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #03452f;
       }
     }
   }

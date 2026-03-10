@@ -2,7 +2,6 @@ export default function Footer() {
   return (
     <>
       
-
       <footer id="footerContainer">
         <div className="footerItem">
           <img src="/src/assets/imgs/footerComponentImgs/footerImg1.png" alt="" />

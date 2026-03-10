@@ -15,6 +15,7 @@ export default function NavBar() {
   }, []);
 
   const [dropdownTopic, setDropdownTopic] = useState("")
+  const [isOpen, setIsOpen] = useState(false)
 
   
   return (
@@ -26,13 +27,13 @@ export default function NavBar() {
       >
         <h2>OMC</h2>
         <ul>
-         <Link className="headerLink" to='/business' onMouseOver={()=> setDropdownTopic('business')}>
+         <Link className="headerLink" to='/business' >
             <li>Business</li>
           </Link>
-          <Link className="headerLink" to='/community'  onMouseOver={()=> setDropdownTopic('community')}>
+          <Link className="headerLink" to='/community' >
             <li>Community</li>
           </Link>
-          <Link className="headerLink" to='/government' onMouseOver={()=> setDropdownTopic('government')}>
+          <Link className="headerLink" to='/government'>
             <li>Government</li>
           </Link>
           <button id="trackingFindServiceBtn">Find Service</button>
@@ -90,7 +91,7 @@ export default function NavBar() {
         <div id="mobileNavContainer">
           <div className="mobileNavLayer">
             <h4>Oakland County Michigan</h4>
-            <button id="mobileNavBtn">&#9776;</button>
+            <button id="mobileNavBtn"  onClick={()=> setIsOpen(prev => !prev)}>&#9776;</button>
           </div>
           <div className="mobileNavLayer">
             <form>
@@ -101,6 +102,41 @@ export default function NavBar() {
             <p>Find Service</p>
           </div>
         </div>
+
+      </nav>
+
+      <nav id="mobileNavMenu" className={isOpen ? 'openNav' : 'closedNav'} onClick={() => setIsOpen(false)}>
+        <div id="mobileSubNav">
+          <h5>Contact Us</h5>
+          <h5>|</h5>
+          <h5>Jobs</h5>
+          <h5>|</h5>
+          <h5>News</h5>
+          <h5>|</h5>
+          <h5>🛒</h5>
+        </div>
+        <ul>
+          <li>
+            <Link className="headerLink" to='/' >
+              Home
+            </Link>
+          </li>
+          <li>
+            <Link className="headerLink" to='/business'>
+              Business
+            </Link>
+          </li>
+          <li>
+            <Link className="headerLink" to='/community' >
+              Community
+            </Link>
+          </li>
+          <li>
+            <Link className="headerLink" to='/government'>
+              Government
+            </Link>
+          </li>
+        </ul>
       </nav>
     </div>
   );

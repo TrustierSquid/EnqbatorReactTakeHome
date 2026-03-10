@@ -302,6 +302,64 @@ $navLinks: 1.375rem;
   }
 }
 
+#mobileNavMenu {
+  z-index: 100;
+}
+
+.closedNav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0%;
+  height: 100vh;
+  padding: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 200;
+}
+
+.openNav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #006242;
+  color: white;
+  width: 80%;
+  height: 100vh;
+  // padding: 2rem;
+  opacity: 1;
+  overflow: hidden;
+  transition: 150ms;
+  z-index: 200;
+
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    // gap: 1.5rem;
+    
+    li {
+      border-bottom: 0.5px solid white;
+      padding: 1rem;
+      color: white;
+
+      .headerLink {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+      }
+    }
+    
+  }
+
+  #mobileSubNav {
+    display: flex;
+    padding: 1rem;
+    gap: 1rem;
+  }
+}
+
 @media (max-width: 1000px) {
   #sideLinks {
     display: none;
@@ -333,7 +391,6 @@ $navLinks: 1.375rem;
   #trackingNavbar {
     display: none;
   }
-
 
 
   #navContainer {

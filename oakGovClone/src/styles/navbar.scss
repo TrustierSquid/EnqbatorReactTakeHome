@@ -176,12 +176,9 @@ $navLinks: 1.375rem;
           letter-spacing: 2px;
           cursor: pointer;
           transition: 150ms;
+          color: white;
+          text-decoration: none;
 
-          * {
-            text-decoration: none;
-            color: white;
-          }
-          
           &:hover {
             color: rgb(0, 255, 229);
           }

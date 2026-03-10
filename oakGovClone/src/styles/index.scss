@@ -6,6 +6,12 @@
 }
 
 body, html {
-  height: 100vh;
+  height: 100%;
   scroll-behavior: smooth;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }

@@ -63,15 +63,15 @@ export default function NavBar() {
 
           <header id="headerNavLinks">
             <ul>
-              <li className="headerLink" onMouseOver={()=> setDropdownTopic('business')} >
-                <Link to='/business'>Business</Link>
-              </li>
-              <li className="headerLink"  onMouseOver={()=> setDropdownTopic('community')}>
-                <p>Community</p>
-              </li>
-              <li className="headerLink"  onMouseOver={()=> setDropdownTopic('government')}>
-                <p>Government</p>
-              </li>
+              <Link className="headerLink" to='/business' onMouseOver={()=> setDropdownTopic('business')}>
+                Business
+              </Link>
+              <Link className="headerLink" to='/community'  onMouseOver={()=> setDropdownTopic('community')}>
+                Community
+              </Link>
+              <Link className="headerLink" to='/government' onMouseOver={()=> setDropdownTopic('government')}>
+                Government
+              </Link>
 
               <NavDropdown topic={dropdownTopic} updateTopicState={setDropdownTopic}/>
 

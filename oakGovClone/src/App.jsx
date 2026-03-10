@@ -43,7 +43,6 @@ function App() {
             <BlogsVideos></BlogsVideos>
             <Stats></Stats>
             <Socials></Socials>
-            <Footer></Footer>
           </Greeting>
         }/>
 
@@ -55,6 +54,7 @@ function App() {
 
       </Routes>
 
+      <Footer></Footer>
     </BrowserRouter>
 
 

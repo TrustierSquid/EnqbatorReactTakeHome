@@ -26,9 +26,15 @@ export default function NavBar() {
       >
         <h2>OMC</h2>
         <ul>
-          <li className="headerLink">Business</li>
-          <li className="headerLink">Community</li>
-          <li className="headerLink">Government</li>
+         <Link className="headerLink" to='/business' onMouseOver={()=> setDropdownTopic('business')}>
+            <li>Business</li>
+          </Link>
+          <Link className="headerLink" to='/community'  onMouseOver={()=> setDropdownTopic('community')}>
+            <li>Community</li>
+          </Link>
+          <Link className="headerLink" to='/government' onMouseOver={()=> setDropdownTopic('government')}>
+            <li>Government</li>
+          </Link>
           <button id="trackingFindServiceBtn">Find Service</button>
         </ul>
       </div>

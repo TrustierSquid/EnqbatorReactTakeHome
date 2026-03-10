@@ -16,6 +16,7 @@ import CountyLeaders from './ContentComponents/CountyLeaders'
 import BlogsVideos from './ContentComponents/BlogsVideos'
 import Stats from './ContentComponents/Stats'
 import Footer from './ContentComponents/Footer'
+import Socials from './ContentComponents/Socials'
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
         <CountyLeaders></CountyLeaders>
         <BlogsVideos></BlogsVideos>
         <Stats></Stats>
+        <Socials></Socials>
         <Footer></Footer>
       </Greeting>
     </>

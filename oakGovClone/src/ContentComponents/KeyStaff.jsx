@@ -22,7 +22,7 @@ export default function KeyStaff() {
         <div className="keyStaffFlexContainer keyStaffCarouselItem">
           <img
             className="keyStaffImg"
-            src="/src/assets/imgs/davidCoulter.png"
+            src="/src/assets/imgs/keyStaffComponentImgs/davidCoulter.png"
             alt="Key Staff"
           />
           <div className="keyStaffTextContainer">
@@ -47,7 +47,7 @@ export default function KeyStaff() {
         <div className="keyStaffFlexContainer keyStaffCarouselItem">
           <img
             className="keyStaffImg"
-            src="/src/assets/imgs/keyStaff2.png"
+            src="/src/assets/imgs/keyStaffComponentImgs/keyStaff2.png"
             alt="Key Staff"
           />
           <div className="keyStaffTextContainer">
@@ -68,7 +68,7 @@ export default function KeyStaff() {
         <div className="keyStaffFlexContainer keyStaffCarouselItem">
           <img
             className="keyStaffImg"
-            src="/src/assets/imgs/keyStaff3.png"
+            src="/src/assets/imgs/keyStaffComponentImgs/keyStaff3.png"
             alt="Key Staff"
           />
           <div className="keyStaffTextContainer">
@@ -89,7 +89,7 @@ export default function KeyStaff() {
         <div className="keyStaffFlexContainer keyStaffCarouselItem">
           <img
             className="keyStaffImg"
-            src="/src/assets/imgs/keyStaff4.png"
+            src="/src/assets/imgs/keyStaffComponentImgs/keyStaff4.png"
             alt="Key Staff"
           />
           <div className="keyStaffTextContainer">

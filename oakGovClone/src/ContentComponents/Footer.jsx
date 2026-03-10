@@ -32,11 +32,11 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-      <section id="footerContainer">
+      <footer id="footerContainer">
         <div className="footerItem">
-          <img src="/src/assets/imgs/footerImg1.png" alt="" />
-          <img src="/src/assets/imgs/footerImg2.png" alt="" />
-          <img src="/src/assets/imgs/footerImg3.png" alt="" />
+          <img src="/src/assets/imgs/footerComponentImgs/footerImg1.png" alt="" />
+          <img src="/src/assets/imgs/footerComponentImgs/footerImg2.png" alt="" />
+          <img src="/src/assets/imgs/footerComponentImgs/footerImg3.png" alt="" />
         </div>
 
         <div className="footerItem">
@@ -64,16 +64,16 @@ export default function Footer() {
             <h4>Connect with us</h4>
             <input type="text" />
             <div className="socialPlatforms">
-              <img src="/src/assets/imgs/facebook.png" alt="" />
-              <img src="/src/assets/imgs/twitter.png" alt="" />
-              <img src="/src/assets/imgs/youtube.png" alt="" />
-              <img src="/src/assets/imgs/instagram.png" alt="" />
-              <img src="/src/assets/imgs/linkedin.png" alt="" />
+              <img src="/src/assets/imgs/footerComponentImgs/facebook.png" alt="" />
+              <img src="/src/assets/imgs/footerComponentImgs/twitter.png" alt="" />
+              <img src="/src/assets/imgs/footerComponentImgs/youtube.png" alt="" />
+              <img src="/src/assets/imgs/footerComponentImgs/instagram.png" alt="" />
+              <img src="/src/assets/imgs/footerComponentImgs/linkedin.png" alt="" />
             </div>
             <button className="clickForMore">Click For More</button>
           </span>
         </div>
-      </section>
+      </footer>
     </>
   );
 }

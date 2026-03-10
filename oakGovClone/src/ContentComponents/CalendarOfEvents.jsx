@@ -7,7 +7,7 @@ export default function CalendarOfEvents() {
 
       <div id="eventsFlexContainer">
         <span className="eventItem">
-          <img src="/src/assets/imgs/event1.png" alt="" />
+          <img src="/src/assets/imgs/calendarEventsComponentImgs/event1.png" alt="" />
 
           <div className="eventDetails">
             <span className="eventDate">
@@ -22,7 +22,7 @@ export default function CalendarOfEvents() {
         </span>
 
         <span className="eventItem">
-          <img src="/src/assets/imgs/event2.png" alt="" />
+          <img src="/src/assets/imgs/calendarEventsComponentImgs/event2.png" alt="" />
 
           <div className="eventDetails">
             <span className="eventDate">
@@ -37,7 +37,7 @@ export default function CalendarOfEvents() {
         </span>
 
         <span className="eventItem">
-          <img src="/src/assets/imgs/event3.png" alt="" />
+          <img src="/src/assets/imgs/calendarEventsComponentImgs/event3.png" alt="" />
 
           <div className="eventDetails">
             <span className="eventDate">

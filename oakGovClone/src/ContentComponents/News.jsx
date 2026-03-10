@@ -6,7 +6,7 @@ export default function News() {
       <div id="newsFlexContainer">
         <span className="newsItem">
           <div className="newsItemOverlayContainer">
-            <img src="/src/assets/imgs/logo.png" alt="logo" />
+            <img src="/src/assets/imgs/newsComponentImgs/logo.png" alt="logo" />
             <span className="overlayMessage">Breaking!</span>
           </div>
           <span className="itemDate">🗓️ Feb 28</span>
@@ -17,7 +17,7 @@ export default function News() {
         </span>
         <span className="newsItem">
           <div className="newsItemOverlayContainer">
-            <img src="/src/assets/imgs/logo.png" alt="logo" />
+            <img src="/src/assets/imgs/newsComponentImgs/logo.png" alt="logo" />
             <span className="overlayMessage">Breaking!</span>
           </div>
           <span className="itemDate">🗓️ Feb 28</span>
@@ -29,7 +29,7 @@ export default function News() {
 
         <span className="newsItem">
           <div className="newsItemOverlayContainer">
-            <img src="/src/assets/imgs/logo.png" alt="logo" />
+            <img src="/src/assets/imgs/newsComponentImgs/logo.png" alt="logo" />
           </div>
           <span className="itemDate">🗓️ Feb 23</span>
           <p className="itemDescription">
@@ -39,7 +39,7 @@ export default function News() {
         </span>
         <span className="newsItem">
           <div className="newsItemOverlayContainer">
-            <img src="/src/assets/imgs/logo.png" alt="logo" />
+            <img src="/src/assets/imgs/newsComponentImgs/logo.png" alt="logo" />
           </div>
           <span className="itemDate">🗓️ Feb 23</span>
           <p className="itemDescription">

@@ -4,9 +4,9 @@ export default function Footer() {
       
       <footer id="footerContainer">
         <div className="footerItem">
-          <img src="/src/assets/imgs/footerComponentImgs/footerImg1.png" alt="" />
-          <img src="/src/assets/imgs/footerComponentImgs/footerImg2.png" alt="" />
-          <img src="/src/assets/imgs/footerComponentImgs/footerImg3.png" alt="" />
+          <img src="/src/assets/imgs/footerImg1.png" alt="" />
+          <img src="/src/assets/imgs/footerImg2.png" alt="" />
+          <img src="/src/assets/imgs/footerImg3.png" alt="" />
         </div>
 
         <div className="footerItem">

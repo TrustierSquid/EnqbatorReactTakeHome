@@ -17,27 +17,47 @@ import BlogsVideos from './ContentComponents/BlogsVideos'
 import Stats from './ContentComponents/Stats'
 import Footer from './ContentComponents/Footer'
 import Socials from './ContentComponents/Socials'
+import Business from './coreComponents/Business'
+
+ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
 
   return (
     <>
-      <Greeting>
-        <NavBar></NavBar>
-        <SideLinks></SideLinks>
-        <Hero></Hero>
+    <BrowserRouter>
+      <NavBar></NavBar>
 
-        {/* Content Components */}
-        <KeyStaff></KeyStaff>
-        <Options></Options>
-        <News></News>
-        <CalendarOfEvents></CalendarOfEvents>
-        <CountyLeaders></CountyLeaders>
-        <BlogsVideos></BlogsVideos>
-        <Stats></Stats>
-        <Socials></Socials>
-        <Footer></Footer>
-      </Greeting>
+      <Routes>
+        <Route path='/' element={
+          <Greeting>
+            <SideLinks></SideLinks>
+            <Hero></Hero>
+
+            {/* Content Components */}
+            <KeyStaff></KeyStaff>
+            <Options></Options>
+            <News></News>
+            <CalendarOfEvents></CalendarOfEvents>
+            <CountyLeaders></CountyLeaders>
+            <BlogsVideos></BlogsVideos>
+            <Stats></Stats>
+            <Socials></Socials>
+            <Footer></Footer>
+          </Greeting>
+        }/>
+
+        <Route path='/business' element={
+          <Greeting>
+            <Business></Business>
+          </Greeting>
+        }/>
+
+      </Routes>
+
+    </BrowserRouter>
+
+
     </>
   )
 }

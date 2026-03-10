@@ -1,6 +1,11 @@
 import { useState, useEffect } from "react";
+import { Link, useLocation } from 'react-router-dom';
+import NavDropdown from "../componentDependants/NavDropdown";
 
 export default function NavBar() {
+  const location = useLocation();
+  const isSubPage = location.pathname !== '/';
+
   // Keeping track of the scroll position to determine whether to show the mobile nav or not
   const [scrollY, setScrollY] = useState(0);
   useEffect(() => {
@@ -9,8 +14,11 @@ export default function NavBar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const [dropdownTopic, setDropdownTopic] = useState("")
+
+  
   return (
-    <>
+    <div id="navWrapper" style={isSubPage ? { backgroundColor: '#007A52'} : {}}>
     {/* This navbar appears when the user scrolls past the hero. */}
       <div
         id="trackingNavbar"
@@ -25,7 +33,7 @@ export default function NavBar() {
         </ul>
       </div>
 
-      <nav id="navContainer">
+      <nav id="navContainer" className={isSubPage ? 'subPageNav' : ''}>
         {/* Very Top Navbar */}
         <div id="subNavBarComponent">
           <ul>
@@ -55,9 +63,18 @@ export default function NavBar() {
 
           <header id="headerNavLinks">
             <ul>
-              <li className="headerLink">Business</li>
-              <li className="headerLink">Community</li>
-              <li className="headerLink">Government</li>
+              <li className="headerLink" onMouseOver={()=> setDropdownTopic('business')} >
+                <Link to='/business'>Business</Link>
+              </li>
+              <li className="headerLink"  onMouseOver={()=> setDropdownTopic('community')}>
+                <p>Community</p>
+              </li>
+              <li className="headerLink"  onMouseOver={()=> setDropdownTopic('government')}>
+                <p>Government</p>
+              </li>
+
+              <NavDropdown topic={dropdownTopic} updateTopicState={setDropdownTopic}/>
+
               <button id="findServiceBtn">Find Service</button>
               <button id="mobileNavBtn">&#9776;</button>
             </ul>
@@ -79,6 +96,6 @@ export default function NavBar() {
           </div>
         </div>
       </nav>
-    </>
+    </div>
   );
 }
